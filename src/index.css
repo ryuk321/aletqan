@@ -35,6 +35,10 @@
 .navbar a:hover {
   color: #3498db !important;
 }
+.logo-brand{
+  height:400px
+}
+
 
 
 #header {
@@ -55,6 +59,7 @@
   color :#484848;
   font-size: 24px
 }
+
 #header .btn-get-started {
   font-weight: 500;
   font-size: 16px;
@@ -63,14 +68,33 @@
   padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
-  color: #3498db;
+  background-color: #3498db;
+  color:white;
+  /* color: #3498db; */
+  border: 2px solid #3498db;
+  text-decoration : none;
+}
+#header .btn-know-more {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing:1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+ 
+  color:black;
+  font-weight:400 ;
+ 
   border: 2px solid #3498db;
   text-decoration : none;
 }
 #header .btn-get-started:hover {
-  background: #3498db;
+  background: #cdd8e0;
   color: #fff;
 }
+.slick-slide { height: 500px !important; }
+
 #header .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 
@@ -100,6 +124,10 @@
     width: 100%;
     height: 80vh;
     max-width: 100%;
+}
+
+.my-3{
+  margin-left :20px;
 }
 
 .footer{
@@ -155,6 +183,7 @@
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

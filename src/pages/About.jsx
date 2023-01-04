@@ -2,6 +2,9 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
+
+
+import Slider from "react-slick";
 // import B from "../images/logo.svg"
 import A from "../images/COMPANY PROFILE - ALETQAN NEPAL-01.jpg";
 import B from "../images/COMPANY PROFILE - ALETQAN NEPAL-02.jpg";
@@ -16,6 +19,14 @@ import J from "../images/COMPANY PROFILE - ALETQAN NEPAL-10.jpg";
 import CP from "../images/cp.png";
 
 function About() {
+  const settings = {
+
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
   return (
     <>
   <div className = "container-fluid nav_bg">
@@ -30,7 +41,7 @@ function About() {
 
 
      
-            <Carousel className = "h-50">
+            {/* <Carousel className = "h-50">
               <div className="imageCarousel">
                 <img src={A}   />
                 <p className="legend">Aletqan Nepal Pvt.Ltd</p>
@@ -73,7 +84,54 @@ function About() {
               </div>
            
           
-            </Carousel>
+            </Carousel> */}
+<div>
+        <h2> Single Item</h2>
+        <Slider adaptiveHeight={false} {...settings}>
+        <div className="imageCarousel">
+                <img src={A}   />
+                <p className="legend">Aletqan Nepal Pvt.Ltd</p>
+              </div>
+              <div>
+                <img src={B} />
+           
+              </div>
+              <div>
+                <img src={C} />
+           
+              </div>
+              <div>
+                <img src={D} />
+        
+              </div>
+              <div>
+                <img src={E} />
+        
+              </div>
+              <div>
+                <img src={F} />
+        
+              </div>
+              <div>
+                <img src={G} />
+        
+              </div>
+              <div>
+                <img src={H} />
+        
+              </div>
+              <div>
+                <img src={I} />
+        
+              </div>
+              <div>
+                <img src={J} />
+        
+              </div>
+        </Slider>
+      </div>
+
+
             <div class="how-section1">
           <div class="row">
             <div class="col-md-6  cp-image ">

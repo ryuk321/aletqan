@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes,Redirect } from "react-router-dom";
 
 
 import Home from "./pages/Home";
@@ -12,11 +12,16 @@ import Footer from "./pages/Footer"
 function App() {
   return (
     <><Navbar/>
-     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/services" element={<Services />} />
+      <Home/>
+     <Routes >
+      
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="/home" element={<Home />} />
+      <Route exactpath="/about" element={<About />} />
+      <Route exactpath="/services" element={<Services />} />
       {/* <Route path="/contact" element = {<Contact/>}/> */}
+   
+      
     </Routes>
     <Footer/>
     

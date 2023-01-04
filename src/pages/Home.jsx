@@ -19,8 +19,8 @@ function Home() {
                     We have been recruiting skilled workers for deacades to
                     different parts of the world.
                   </h2>
-                  <div className=" d-flex justify-content-evenly ">
-                    <div className="mt-3   ">
+                  <div className=" d-flex justify-content-start ">
+                    <div className="mt-3 mr-3   ">
                       <a
                         href=""
                         className="btn btn-get-started  btn-outline-primary  "
@@ -29,10 +29,10 @@ function Home() {
                         Get Started
                       </a>
                     </div>
-                    <div className="mt-3   ">
+                    <div className="my-3 ">
                       <a
                         href=""
-                        className="btn btn-get-started  btn-outline-primary  "
+                        className="btn btn-know-more  btn-outline-primary  "
                       >
                         {" "}
                         Know More
@@ -46,6 +46,7 @@ function Home() {
                     src={logo}
                     className="img-fluid animated logo-brand"
                     alt="home img"
+                    height = "500px"
                   />
                 </div>
               </div>
