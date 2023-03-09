@@ -1,0 +1,78 @@
+@import "../../../../style-config/mixins.scss";
+.front-cards-wrapper{
+  @include appLinearBackgrount;
+
+  padding-top:38%;
+  height:auto;  
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title{
+    @include typography(35px,900,1);
+    display: flex;
+    justify-content: center;
+    margin-bottom:2%;
+  }
+  .cards-container{
+    width:90%;
+    height:auto;
+    display:grid;
+    grid-template-columns: auto auto auto
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    // align-items: center;
+
+  }
+  @include for-phone-only{
+    padding-top:10%;
+    .title{
+      @include typography(25px,900,1);
+      display: flex;
+      justify-content: center;
+      margin-bottom:2%;
+    }
+  }
+
+
+.front-cards-container{
+  height:auto;
+ 
+  padding-top:35%;
+  display:flex;
+  flex-direction: column;
+  background: linear-gradient(90deg, rgba(177,176,185,1) 0%, rgba(234,211,235,1) 0%, rgba(215,195,215,1) 55%, rgba(147,139,144,1) 100%, rgba(108,15,71,1) 100%, rgba(125,17,77,1) 100%, rgba(213,30,107,0.8127626050420168) 100%, rgba(212,10,10,1) 100%);
+
+ 
+  // .card-section{
+  
+   
+  //   height:auto;
+  //   width:100%;
+  
+  //   display: grid;
+  // grid-template-columns: auto auto auto;
+  // // background-color: #2196F3;
+  // justify-content: space-evenly;
+
+  //   overflow: hidden;
+  // }
+  // @include for-phone-only{
+  //   padding-top:5%;
+  //   height:auto;
+    
+  //   .slick-slide{
+  //     height:auto;
+  //     margin-right:3%;
+  //   }
+    
+  //   .card-section{
+  //     display:flex;
+
+  //   }
+ 
+  // }
+  
+   
+}}

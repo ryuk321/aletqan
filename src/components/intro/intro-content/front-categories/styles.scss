@@ -1,0 +1,25 @@
+@import "../../../../style-config/mixins.scss";
+.categories-card{
+    display:flex;
+    flex-direction: column;
+    height:auto;
+    align-items: center;
+    .category-title{
+        h1{
+            @include typography(40px, 800,2)
+
+        }
+    }
+
+    .category-card-body {
+        width: 100%;
+        height: auto;
+        display: flex;
+    
+        justify-content: center;
+        align-items: center;
+        flex-wrap :wrap
+    
+    }
+
+}

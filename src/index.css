@@ -173,6 +173,9 @@
 {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
   text-align: center;
+  display: flex;
+  justify-content: end;
+  padding-right:10%;
 }
 .cp-image 
 {

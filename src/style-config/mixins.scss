@@ -1,0 +1,41 @@
+@mixin typography($size:19px,$weight:400,$lineHeight:24px) {
+    font-style: normal;
+    font-weight: $weight; 
+    font-size: $size;
+    line-height: $lineHeight
+}
+@mixin autoHeight(){
+  height:auto;
+  
+}
+@mixin appLinearBackgrount(){
+  background: linear-gradient(
+        90deg,
+        rgba(177, 176, 185, 1) 0%,
+        rgba(234, 211, 235, 1) 0%,
+        rgba(215, 195, 215, 1) 55%,
+        rgba(147, 139, 144, 1) 100%,
+        rgba(108, 15, 71, 1) 100%,
+        rgba(125, 17, 77, 1) 100%,
+        rgba(213, 30, 107, 0.8127626050420168) 100%,
+        rgba(212, 10, 10, 1) 100%)
+}
+
+@mixin for-smphone-only {
+  @media (max-width: 320) { @content; }
+}
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+  }
+  @mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  }
+  @mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  }
+  @mixin for-desktop-up {
+    @media (min-width: 1200px) { @content; }
+  }
+  @mixin for-big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }

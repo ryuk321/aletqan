@@ -1,0 +1,71 @@
+@import "../../../../style-config/mixins.scss";
+.front-commitment-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        90deg,
+        rgba(177, 176, 185, 1) 0%,
+        rgba(234, 211, 235, 1) 0%,
+        rgba(215, 195, 215, 1) 55%,
+        rgba(147, 139, 144, 1) 100%,
+        rgba(108, 15, 71, 1) 100%,
+        rgba(125, 17, 77, 1) 100%,
+        rgba(213, 30, 107, 0.8127626050420168) 100%,
+        rgba(212, 10, 10, 1) 100%
+    );
+    .wrapper {
+      margin-bottom: 2%;
+        width: 90%;
+     
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .title {
+            @include typography(40px, bold, 3);
+        }
+        .row-col {
+   
+            display: flex;
+            justify-content: space-evenly;
+            .text {
+                width: 52%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                text-align: justify;
+                p {
+                  font-family: sans-serif;
+                    @include typography(23px, 60, 1.5);
+
+                    
+                }
+            }
+        }
+    }
+    hr{
+      width:80%;
+      margin-top:2%;
+      margin-bottom: 2%;
+  
+    border-width:0;
+    height:2px;
+      color:red;
+      background-color: red;
+
+    }
+    .get-hired{
+      width:50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      @include typography(35px,500,3);
+    }
+}
