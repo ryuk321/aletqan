@@ -67,7 +67,7 @@ function App() {
                     element={<Contacts />}
                 />
             </Routes>
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 }
