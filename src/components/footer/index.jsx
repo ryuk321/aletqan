@@ -28,7 +28,7 @@ function Footer() {
   
   
     
-    <a href="#">Faq</a>
+    <a href="#">Faqs</a>
     
     <a href="#">Contact</a>
   </p>
